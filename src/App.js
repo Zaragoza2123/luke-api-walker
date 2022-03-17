@@ -12,17 +12,19 @@ import SearchForm from './components/SearchFrom';
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-            <SearchForm></SearchForm>
-      <Switch> 
-      <Route exact path='/:catagory/:id'>
-        <StarWarAPISearch></StarWarAPISearch>
-      </Route>
-      </Switch>
-      </BrowserRouter>
-      
-    </div>
+
+    <BrowserRouter>
+      <div className="App">
+        <SearchForm></SearchForm>
+        <Switch>
+          <Route exact path='/:catagory/:id'>
+            <StarWarAPISearch></StarWarAPISearch>
+          </Route>
+        </Switch>
+      </div>
+    </BrowserRouter>
+
+
 
   );
 }
